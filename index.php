@@ -1,3 +1,6 @@
+<?php
+$response = "";
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -118,23 +121,23 @@
                <div class="row">
                    <div class="col-md-4 wow bounceInDown">
                        
-                           <!-- <a href="#"><i class="fa fa-user fa-5x square"></i></a> -->
+                        
                            <h3 class="heading">Biometrics</h3>
                            <p class="col-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus excepturi non modi quo iusto aut in nisi, esse provident!</p>
                    </div>
                        
                     <div class="col-md-4 wow bounceInDown">
                        
-                           <!-- <a href="#"><i class="fa fa-bicycle fa-5x"></i></a> -->
-                           <h3 class="heading">Sport</h3>
+                           
+                           <h3 class="heading">Cctv</h3>
                            <p class="col-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus excepturi non modi quo iusto aut in nisi, esse provident!</p>
                            
                     </div>
                       
                     <div class="col-md-4 wow bounceInRight">
                        
-                           <!-- <a href="#"><i class="fa fa-location-arrow fa-5x"></i></a> -->
-                           <h3 class="heading">Campaign</h3>
+                           
+                           <h3 class="heading">Access Control</h3>
                            <p class="col-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus excepturi non modi quo iusto aut in nisi, esse provident!</p>
                        
                     </div>
@@ -152,6 +155,14 @@
                         <div class="col-md-12 wow bounceInDown">
                             <h2 class="section-title">Get a Quote</h2>
                             <p class="under-heading">Feel Free to contact us</p>
+                            <?php
+                                if ($response == TRUE) {
+                                    echo "Request for quotation sent!";
+                                }
+                                else if($response == FALSE) {
+                                    echo "Error Sending quote request";
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
