@@ -85,7 +85,7 @@ p {
 }
 
 .header {
-    background-image: url(../images/header-bg.jpg);
+    /* background-image: url(../images/header-bg.jpg); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,7 +189,7 @@ p {
     text-align: center;
     padding-bottom: 8rem;
     padding-top: 5rem;
-    background-image: url(../images/crossword.png);
+    /* background-image: url(../images/crossword.png); */
     background-attachment: fixed;
 }
 
@@ -397,7 +397,7 @@ p {
 .numbers-section {
     padding-top: 3rem;
     padding-bottom: 5rem;
-    background-image: url(../images/crossword.png);
+    /* background-image: url(../images/crossword.png); */
     background-attachment: fixed;
 }
 
