@@ -16,7 +16,18 @@
 
         if($result){
             echo "Information Saved.... Catlog downloading........";
+            // We'll be outputting a PDF
+            header('Content-type: application/pdf');
+
+            // It will be called Catlog.pdf
+            header('Content-Disposition: attachment; filename="catlog.pdf"');
+
+            // The PDF source is in original.pdf
+            readfile('file/catlog.pdf');
+
+            //
             header("location: index.php");
+           
         }
         else{
             echo "Error Saving Information";
