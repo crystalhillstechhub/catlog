@@ -1,7 +1,6 @@
 <?php
 
     require('coonection.php');
-
     if(isset($_POST['download'])){
 
         $fullName = $_POST['fullName'];
