@@ -26,7 +26,7 @@
             readfile('file/catlog.pdf');
 
             //
-            header("location: index.php");
+            // header("location: index.php");
            
         }
         else{

@@ -134,22 +134,22 @@
                         <div class="modal-body">
                             <div class="form-group>">
                                 <label for="email">Full Name</label>
-                                <input type="text" class="form-control" name="fullName" required>
+                                <input type="text" class="form-control" name="fullName" id="fullName" required>
                             </div>
 
                             <div class="form-group>">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" name="email" required>
+                                <input type="email" class="form-control" name="email" id="email" required>
                             </div>
 
                             <div class="form-group>">
                                 <label for="phone">Phone</label>
-                                <input type="text" class="form-control" name="phoneNumber" required>
+                                <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" required>
                             </div>
 
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" class="btn btn-primary" name="signup" value="Submit">
+                            <input type="submit" class="btn btn-primary" name="signup" id="signup" value="Submit">
                         </div>
                     </form>
                 </div>
@@ -165,6 +165,11 @@
         <script>
 
             if(document.cookie.indexOf('visited=true') == -1){
+
+                const fullName = document.getElementById('fullName').value;
+                const email = document.getElementById('email').value;
+                const phoneNumber = document.getElementById('phoneNumber').value;
+
                 $('#myModal').modal({show: 'show',
                     backdrop: 'static',
                     keyboard: false
@@ -172,10 +177,15 @@
                 var year = 1000*60*60*24*365;
                 var expires = new Date((new Date()).valueOf() + year);
                 document.cookie = "visited=true;expires=" + expires.toUTCString();
+
                 $('#signup').click(function() {
-                $('#myModal').modal('hide');
-                });
+                    if (fullName !='' && email != '' && phoneNumber != '') {
+                        $('#myModal').modal({show:'show'});
+                    }
+                });               
+                
             }else {
+
                 console.log('welcome back');
             }
         </script>
