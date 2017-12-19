@@ -34,7 +34,7 @@
                    <div class="container">
                <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btn-primary" name="download">Click To Download Catalogue</button>
+                        <a class="btn btn-primary" href="file/catlog.pdf" target="_blank" name="download">Click To Download Catalogue</a>
                     </div>
                </div>
            </div>
@@ -58,23 +58,33 @@
                         <form role="form" method="post" action="getquote.php">
                             <div class="row">
                             <div class="col-md-6 wow bounceInLeft">
-                                
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Name" class="form-control input-lg" name="name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your E-Mail" class="form-control input-lg" name="email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subjet" class="form-control input-lg" name="subject">
-                                    </div>
-                                
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name" class="form-control input-lg" name="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your E-Mail (someone@domain.com)" class="form-control input-lg" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subjet" class="form-control input-lg" name="subject" required>
+                                </div>
                             </div>
                             <div class="col-md-6 wow bounceInRight">
+                                <div class="form-group">
+                                    <select class="form-control" name="productName" required>
+                                        <option disable>.....Select Product Category.....</option>
+                                        <option value="biometrics-devices">Time and Attendance (Biometrics Devices)</option>
+                                        <option value="spy-cameras">Spy Cameras</option>
+                                        <option value="electic-fencing">Electric Fencing</option> 
+                                        <option value="Access-control">Access Control</option>
+                                        <option value="Smart-home-solutions">Smart Home Solutions</option>
+                                        <option value="School-managment-solution">School Managment Solutions</option>    
+                                        <option value="Payroll-automation">Payroll Automation</option>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                    </select>
+                                </div>
                                <div class="form-group">
-                                <textarea placeholder="Product Details and Quantity" class="form-control " name="details"></textarea>
+                                    <textarea placeholder="Product Details and Quantity" required class="form-control " name="details"></textarea>
                                </div>
-                               <button type="submit" name="submit" class="btn btn-primary btn-block input-lg">Get Quote</button>
+                               <input type="submit" class="btn btn-primary btn-block input-lg" name="getQuote" value="Get Quote">
                             </div>
                         </div>
                         </form>
@@ -84,9 +94,9 @@
                             <div class="col-md-12">
                                 <div class="social-icons wow slideInDown">
                                     <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+                                        <li><a href="https://web.facebook.com/crystalhillsgroup"><i class="fa fa-facebook fa-3x"></i></a></li>
+                                        <li><a href="https://www.twitter.com/crystalhills_"><i class="fa fa-twitter fa-3x"></i></a></li>
+                                        <li><a href="https://www.instagram.com/technologyhubng"><i class="fa fa-instagram fa-3x"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -103,7 +113,7 @@
                             <p class="footer-text" >Crystalhills Software Group <span class="copyright"> &copy;</span>2017</p>
                         </div>
                         <div class="col-md-4">
-                            <p class="footer-text"><a href="#about" class="top-overide">Back to Top</a></p>
+                      
                         </div>
                         <div class="col-md-4">
                             <p class="footer-text">Designed and crafted<span class="usama"> with <i class="fa fa-heart"></i></span></p>
