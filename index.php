@@ -162,6 +162,9 @@
                 var year = 1000*60*60*24*365;
                 var expires = new Date((new Date()).valueOf() + year);
                 document.cookie = "visited=true;expires=" + expires.toUTCString();
+                $('#signup').click(function() {
+                $('#myModal').modal('hide');
+                });
             }else {
                 console.log('welcome back');
             }
