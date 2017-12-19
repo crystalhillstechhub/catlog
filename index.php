@@ -1,6 +1,3 @@
-<?php
-$response = "";
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -155,14 +152,6 @@ $response = "";
                         <div class="col-md-12 wow bounceInDown">
                             <h2 class="section-title">Get a Quote</h2>
                             <p class="under-heading">Feel Free to contact us</p>
-                            <?php
-                                if ($response == TRUE) {
-                                    echo "Request for quotation sent!";
-                                }
-                                else if($response == FALSE) {
-                                    echo "Error Sending quote request";
-                                }
-                            ?>
                         </div>
                     </div>
                 </div>
@@ -225,21 +214,39 @@ $response = "";
                 </div>
             </div>
         </section>
-        <section class="loading-overlay">
-       <div class="sk-cube-grid">
-        <div class="sk-cube sk-cube1"></div>
-        <div class="sk-cube sk-cube2"></div>
-        <div class="sk-cube sk-cube3"></div>
-        <div class="sk-cube sk-cube4"></div>
-        <div class="sk-cube sk-cube5"></div>
-        <div class="sk-cube sk-cube6"></div>
-        <div class="sk-cube sk-cube7"></div>
-        <div class="sk-cube sk-cube8"></div>
-        <div class="sk-cube sk-cube9"></div>
-       </div>
-       </section>
        
-       
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-md-center" style="color:#1d9bd4;">A Step away from getting Crystalhills catalogue</h4>
+                
+            </div>
+            <form method="post">
+                <div class="modal-body">
+                    <div class="form-group>">
+                        <label for="email">Full Name</label>
+                        <input type="text" class="form-control" name="fullName" required>
+                    </div>
+
+                    <div class="form-group>">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+
+                    <div class="form-group>">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" name="phone" required>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" name="signup" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
        
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -249,5 +256,21 @@ $response = "";
         <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script>new WOW().init();</script>
+
+        <script>
+
+           if (document.cookie.indexOf('visited=true') == -1){
+                  $('#myModal').modal({show: 'show',
+               backdrop: 'static',
+            keyboard: false});
+            var year = 1000*60*60*24*365;
+    var expires = new Date((new Date()).valueOf() + year);
+    document.cookie = "visited=true;expires=" + expires.toUTCString();
+
+  }
+  else {
+      console.log('welcome back');
+  }
+        </script>
     </body>
 </html>
