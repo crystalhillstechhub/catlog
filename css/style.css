@@ -577,3 +577,9 @@ p {
         transform: scale3D(0, 0, 1);
     }
 }
+
+@media screen and (min-width: 320px) {
+    body{
+        width: 100% !important;
+    }
+}

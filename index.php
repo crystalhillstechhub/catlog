@@ -19,39 +19,39 @@
        <header class="header" id="HOME">
                  <!-- Navigation -->
             
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
               
                 
-                <div class="container">
+                <!-- <div class="container"> -->
                   
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
+                    <!-- <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" href="#about">
+                      </button> -->
+                      <!-- <a class="navbar-brand" href="#about"> -->
                           <!-- small size logo -->
-                          <h4 class="header-color"><strong>Crystalhills Catalogue</strong></h4>
+                          <!-- <h4 class="header-color"><strong>Crystalhills Catalogue</strong></h4> -->
                           <!-- <img src="images/logobike.png" alt="logo"> -->
 
-                        </a>
-                    </div>
+                        <!-- </a> -->
+                    <!-- </div> -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
+                <!-- <div class="collapse navbar-collapse" id="loso-navbar-collapse-1"> -->
+                  <!-- <ul class="nav navbar-nav navbar-right">
                         <li><a href="#about" class="nav-item">Crystalhills Catalogue</a></li>
                         <li><a href="http://crystalhills.org" target="_blank" class="nav-item">Crystalhills Home</a></li>
                         <li><a href="http://shop.crystalhills.org" target="_blank" class="nav-item">Crystalhills Shop</a></li>
-                  </ul>
+                  </ul> -->
                  
                  
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-</nav>
+                <!-- </div>/.navbar-collapse -->
+              <!-- </div>/.container-fluid -->
+<!-- </nav> -->
           
           
           
@@ -102,41 +102,22 @@
            </div> -->
        </header>
        <!--Section About-->
-       <section id="about">
+       <!-- <section id="about"> -->
           
            <div class="section-about">
               <div class="container">
                   <div class="row">
                       <div class="col-md-12 wow bounceIn">
                           <h2 class="section-title">Crystalhills Group Catalogue</h2>
-                          <p class="under-heading">Take A Look at some of our best products</p>
+                          <p class="under-heading">A step away from getting our catalogue</p>
                       </div>
                   </div>
               </div>
                <div class="section-wrapper">
                    <div class="container">
                <div class="row">
-                   <div class="col-md-4 wow bounceInDown">
-                       
-                        
-                           <h3 class="heading">Biometrics</h3>
-                           <p class="col-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus excepturi non modi quo iusto aut in nisi, esse provident!</p>
-                   </div>
-                       
-                    <div class="col-md-4 wow bounceInDown">
-                       
-                           
-                           <h3 class="heading">Cctv</h3>
-                           <p class="col-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus excepturi non modi quo iusto aut in nisi, esse provident!</p>
-                           
-                    </div>
-                      
-                    <div class="col-md-4 wow bounceInRight">
-                       
-                           
-                           <h3 class="heading">Access Control</h3>
-                           <p class="col-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus excepturi non modi quo iusto aut in nisi, esse provident!</p>
-                       
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" name="download">Click To Download Catalogue</button>
                     </div>
                </div>
            </div>
@@ -219,7 +200,7 @@
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title text-md-center" style="color:#1d9bd4;">A Step away from getting Crystalhills catalogue</h4>
+                <h4 class="modal-title text-md-center" style="color:#1d9bd4;">You are just a step away from getting Crystalhills catalogue</h4>
                 
             </div>
             <form method="post">
