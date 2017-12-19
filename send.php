@@ -1,8 +1,8 @@
 <?php
 
-    require('coonection.php');
+    require('connection.php');
 
-    if(isset($_POST['download'])){
+    if(isset($_POST['signup'])){
 
         $fullName = $_POST['fullName'];
         $email = $_POST['email'];
@@ -16,6 +16,7 @@
 
         if($result){
             echo "Information Saved.... Catlog downloading........";
+            header("location: index.php");
         }
         else{
             echo "Error Saving Information";
