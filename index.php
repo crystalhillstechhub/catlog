@@ -33,9 +33,28 @@
                <div class="section-wrapper">
                    <div class="container">
                <div class="row">
-                    <div class="col-md-12">
-                        <a class="btn btn-primary" href="file/catlog.pdf" target="_blank" name="download">Click To Download Catalogue</a>
-                    </div>
+               <div class="col-md-12">
+                <div class="col-md-3">
+
+                <img src="img/biometrics.png" alt="biometrics img" class="img-responsive">
+                    <h4>Biometrics Catalogue</h4>
+                    <a class="btn btn-primary" href="file/biometrics.pdf" target="_blank" name="download">Download Catalogue</a>
+                </div>
+                <div class="col-md-3">
+                <img src="img/cctv.png" alt="biometrics img" class="img-responsive">
+                <h4>Camera Catalogue</h4>
+                    <a class="btn btn-primary" href="file/camera.pdf" target="_blank" name="download">Download Catalogue</a>
+                </div>
+                <div class="col-md-3">
+                <img src="img/pabx.png" alt="biometrics img" class="img-responsive">
+                <h4>PABX Catalogue</h4>
+                    <a class="btn btn-primary" href="file/pabx.pdf" target="_blank" name="download">Download Catalogue</a>
+                </div>
+                <div class="col-md-3">
+                <h4>General Catalogue</h4>
+                    <a class="btn btn-primary" href="file/catlog.pdf" target="_blank" name="download">Download Catalogue</a>
+                </div>
+               </div>
                </div>
            </div>
                </div>
@@ -160,6 +179,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.5.0/alertify.min.js"></script>
         <script>new WOW().init();</script>
 
         <script>
