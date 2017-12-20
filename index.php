@@ -180,7 +180,8 @@
 
                 $('#signup').click(function() {
                     if (fullName !='' && email != '' && phoneNumber != '') {
-                        $('#myModal').modal({show:'show'});
+                        alert("Hello");
+                        $('#myModal').modal({show:'hide'});
                     }
                 });               
                 
