@@ -24,9 +24,6 @@
 
             // The PDF source is in original.pdf
             readfile('file/catlog.pdf');
-
-            //
-            // header("location: index.php");
            
         }
         else{

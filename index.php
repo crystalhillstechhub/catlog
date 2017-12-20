@@ -48,8 +48,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 wow bounceInDown">
-                            <h2 class="section-title">Get a Quote</h2>
-                            <p class="under-heading">Feel Free to contact us</p>
+                            <h6 class="section-title">Request for a Quote</h6>
+                            <p class="under-heading">Receive Response Within 24 hours</p>
                         </div>
                     </div>
                 </div>
@@ -59,19 +59,22 @@
                             <div class="row">
                             <div class="col-md-6 wow bounceInLeft">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Your Name" class="form-control input-lg" name="fullName" required>
+                                    <input type="text" placeholder="Your Name" class="form-control input-lg" id="qFullName" name="fullName" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" placeholder="Your E-Mail (someone@domain.com)" class="form-control input-lg" name="email" required>
+                                    <input type="email" placeholder="Your E-Mail (someone@domain.com)" id="qEmail" class="form-control input-lg" name="email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" placeholder="Subjet" class="form-control input-lg" name="subject" required>
+                                    <input type="email" placeholder="Your Mobile Number" id="qPhoneNumber" class="form-control input-lg" name="phoneNumber" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subjet" class="form-control input-lg" name="subject" value="Quotation" required>
                                 </div>
                             </div>
                             <div class="col-md-6 wow bounceInRight">
                                 <div class="form-group">
-                                    <select class="form-control" name="productName" required>
-                                        <option disable>.....Select Product Category.....</option>
+                                    <select class="form-control input-lg" name="productName" required>
+                                        <option value="general">General</option>
                                         <option value="biometrics-devices">Time and Attendance (Biometrics Devices)</option>
                                         <option value="spy-cameras">Spy Cameras</option>
                                         <option value="electic-fencing">Electric Fencing</option> 
@@ -127,6 +130,7 @@
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <button type="button" class="close hidden" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title text-md-center" style="color:#1d9bd4;">You are just a step away from getting Crystalhills catalogue</h4>
                         
                     </div>
@@ -163,32 +167,38 @@
         <script>new WOW().init();</script>
 
         <script>
+            $(document).ready(function(){
+                if(document.cookie.indexOf('visited=true') == -1){
 
-            if(document.cookie.indexOf('visited=true') == -1){
-
-                const fullName = document.getElementById('fullName').value;
-                const email = document.getElementById('email').value;
-                const phoneNumber = document.getElementById('phoneNumber').value;
-
-                $('#myModal').modal({show: 'show',
-                    backdrop: 'static',
-                    keyboard: false
-                });
-                var year = 1000*60*60*24*365;
-                var expires = new Date((new Date()).valueOf() + year);
-                document.cookie = "visited=true;expires=" + expires.toUTCString();
-
-                $('#signup').click(function() {
-                    if (fullName !='' && email != '' && phoneNumber != '') {
-                        alert("Hello");
-                        $('#myModal').modal({show:'hide'});
-                    }
-                });               
-                
-            }else {
+                    $('#myModal').modal({show: 'show',
+                        backdrop: 'static',
+                        keyboard: false
+                    });
+                    var year = 1000*60*60*24*365;
+                    var expires = new Date((new Date()).valueOf() + year);
+                    document.cookie = "visited=true;expires=" + expires.toUTCString();
+                                 
+                }else {
 
                 console.log('welcome back');
-            }
+                }
+
+                $('#signup').click(function() {
+                    const fullName = document.getElementById('fullName').value;
+                    const email = document.getElementById('email').value;
+                    const phoneNumber = document.getElementById('phoneNumber').value;   
+                    if(fullName != '' && email != '' && phoneNumber != '')
+                    {
+                        $('.close').trigger('click');
+                        $('#qFullName').val($('#fullName').val());
+                        $('#qEmail').val($('#email').val());
+                        $('#qPhoneNumber').val($('#phoneNumber').val());
+                    }    
+                    else{
+                        alert('Error');
+                    }                                 
+                }); 
+            });
         </script>
     </body>
 </html>

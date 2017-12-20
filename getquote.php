@@ -18,8 +18,10 @@
        
       // Compose a simple HTML email message
       $message = '<html><body>';
-      $message .= '<h1 style="color:#f40;">Hi Lola!</h1>';
-      $message .= '<h5 style="color:#080;font-size:18px;">'.$_POST['productName'].'</h5>';
+      $message .= '<h1 style="color:#f40;">Hi!</h1>';  
+      $message .= '<p style="color:#080;font-size:18px;"> Am '. $_POST['fullName'].' I would like you to provide me 
+        with more details about' .$_POST['productName'].'.</p>' ;
+      $message .= '<br>';
       $message .= '<p style="color:#080;font-size:18px;">'.$_POST['details']. '</p>';
       $message .= '</body></html>';
        
