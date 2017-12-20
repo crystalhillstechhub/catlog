@@ -11,21 +11,32 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
         <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <style>
+            .refixer{
+                margin-top: -80px;
+                margin-left: -40px;
+            }
+        </style>
     </head>
     <body>
        <header class="header" id="HOME">
+        &nbsp; &nbsp;
        </header>
        <!--Section About-->
        <!-- <section id="about"> -->
           
            <div class="section-about">
               <div class="container">
+              <div class="row">
+              <div class="col-md-12 text-center refixer">
+              <img src="img/our-logo.png" alt="logo" class="img-responsive text-center" height="100px" width="100px"/></div></div>
                   <div class="row">
                       <div class="col-md-12 wow bounceIn">
-                          <h2 class="section-title">Crystalhills Group Catalogue</h2>
+                          <h2 class="section-title"> Crystalhills Group Catalogue</h2>
                           <p class="under-heading">A step away from getting our catalogue</p>
                       </div>
                   </div>
@@ -51,6 +62,7 @@
                     <a class="btn btn-primary" href="file/pabx.pdf" target="_blank" name="download">Download Catalogue</a>
                 </div>
                 <div class="col-md-3">
+                <img src="img/general.png" alt="biometrics img" class="img-responsive">
                 <h4>General Catalogue</h4>
                     <a class="btn btn-primary" href="file/catlog.pdf" target="_blank" name="download">Download Catalogue</a>
                 </div>
@@ -183,7 +195,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.5.0/alertify.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
         <script>new WOW().init();</script>
 
         <script>
@@ -215,7 +227,7 @@
                         $('#qPhoneNumber').val($('#phoneNumber').val());
                     }    
                     else{
-                        alert('Error');
+                        $.notify("All fields are required", "warn");
                     }                                 
                 }); 
             });
